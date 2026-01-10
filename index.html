@@ -197,7 +197,9 @@
           --z-overlay: 1000;
           --z-system: 5000;
         }
-      </style><link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;800&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"><style>
+      </style>
+      
+      <style>
     /* --- ARCHITECTURE: DESIGN TOKENS --- */
     :root {
       /* DARK MODE (DEFAULT) */
@@ -1947,12 +1949,7 @@ body.zen-mode .svg-container {
 
 
 
-<script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('./sw.js')
-      .then(() => console.log('Service Worker Registered'));
-  }
-</script><script src="https://unpkg.com/lucide@latest"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.6/purify.min.js"></script><script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.6/purify.min.js"></script><script>
   const App = {
     config: {
       vaultKey: 'dual_vault_data',
@@ -3080,7 +3077,7 @@ body.zen-mode .svg-container {
       setupCrystalModal();
 
       particlesJS('particles-js',{
-        particles:{ number:{value:40},color:{value:['#0ff','#f0f']}, shape:{type:'circle'},opacity:{value:0.4},size:{value:2.4}, move:{enable:true,speed:1.5} }, retina_detect:true
+        particles:{ number:{value:18},color:{value:['#0ff','#f0f']}, shape:{type:'circle'},opacity:{value:0.4},size:{value:2.4}, move:{enable:true,speed:1.5} }, retina_detect:true
       });
 
       // eventos básicos
@@ -3591,9 +3588,9 @@ mantraBtn.addEventListener('click', () => {
       setupTogglePanel();
       setupCrystalModal();
 
-      particlesJS('particles-js',{
-        particles:{ number:{value:40},color:{value:['#0ff','#f0f']}, shape:{type:'circle'},opacity:{value:0.4},size:{value:2.4}, move:{enable:true,speed:1.5} }, retina_detect:true
-      });
+      // particlesJS('particles-js',{
+        // particles:{ number:{value:40},color:{value:['#0ff','#f0f']}, shape:{type:'circle'},opacity:{value:0.4},size:{value:2.4}, move:{enable:true,speed:1.5} }, retina_detect:true
+      // });
 
       // eventos básicos
       document.getElementById('sendBtn').addEventListener('click', sendMessage);
@@ -3632,7 +3629,7 @@ const mantraText = document.getElementById('mantra-text');
 let mantraCollapsed = false;
 
 const TXT_EXPANDED = `Do seu jeito. <strong>Sempre</strong> único. <strong>Sempre</strong> seu.`;
-const TXT_COLLAPSED = `USE · TRANSFORME · DEVOLVA`;
+const TXT_COLLAPSED = `USE·TRANSFORME·DEVOLVA`;
 
 function swapMantraText(html) {
   mantraText.classList.add('fade-out');
